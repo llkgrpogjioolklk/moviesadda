@@ -1,0 +1,151 @@
+/* Global body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 15px 20px;
+}
+
+header .logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: yellow;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main content styling */
+main {
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Poster image styling */
+.poster img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* Details styling */
+.details {
+    flex-grow: 1;
+}
+
+.details h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.details .year {
+    color: #aaa;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.trailer {
+    background-color: #444;
+    color: #fff;
+    margin-right: 10px;
+}
+
+button.download {
+    background-color: yellow;
+    color: #000;
+}
+
+/* Video styling */
+video {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Synopsis section styling */
+.synopsis {
+    margin-top: 2px;
+}
+
+.synopsis h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 200px;
+    text-align: center;
+    background-color: #000;
+    padding: 10px;
+    font-size: 50px;
+}
+
+footer span {
+    color: yellow;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Stack poster and details vertically on smaller screens */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster img {
+        width: 80%;
+    }
+
+    .details {
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    /* Make buttons full-width on smaller screens */
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Search</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search for a movie..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="movies">
+        <!-- Movie cards will be injected here based on search results -->
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/0e8c2a540ecdd6830315a6a1154460e3d047da9349d3b201b5cb355ed077dd04.jpg" alt="Movie 1">
+            <h3>KALKI </h3>
+            <button class="next-button"      style="font-size: 1.5rem; padding: 1px 3px; border-radius: 8px; background-color: #007bff; color: white; border: none;" onclick="location.href='page5.html'">WATCH NOW </button>
+          
+        </div>
+        <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdY_UFX_NSX40bVf_zvj3UChBQcbAwoK3lBA&s" alt="Movie 2 " width="400" height="200">
+            <h3>Titanic</h3>
+            <button class="next-button"      style="font-size: 1.5rem; padding: 1px 3px; border-radius: 8px; background-color: #007bff; color: white; border: none;" onclick="location.href='page6.html'">WATCH NOW </button>
+        </div>
+        <!-- More movie cards will be displayed based on search -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 iBomma Clone</p>
+    </footer>
+</body>
+</html>
